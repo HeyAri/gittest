@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>New Requests</title>
+
+    <link rel="stylesheet" media="screen" href="assets/CSS/main.css" />
+    <link rel="stylesheet" media="screen" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" media="screen" href="assets/CSS/pagepops.css" />
+    <link rel="stylesheet" media="screen" href="assets/CSS/sprites.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script>
+        $(window).load(function () {
+            $('#requestModal').modal('show');
+        });
+    </script>
+    }
+    <style>
+    </style>
+
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <span class="avatar"><img src="images/logo/Zovie%20World%20Logo.png" alt="Zovie World logo" /></span>
+            <h1>Zovie World Intranet</h1>
+
+            <!-- Icon Navigation -->
+            <ul class="icons">
+                <li><a href="homepage.html" class="icon style2"><span class="label">Home</span>Home</a></li>
+                <li><a href="requestnew.html" class="icon style2"><span class="label">Ordering</span>Ordering</a></li>
+                <li><a href="requestnew.html" href="#" class="icon style2"><span class="label">Status</span>Status</a></li>
+                <li><a href="#" class="icon style2"><span class="label">Reports</span>Reports</a></li>
+                <li><a href="#" class="icon style2"><span class="label">Approvals</span>Approvals</a></li>
+                <li><a href="index.html" class="icon style2"><span class="label">Log Out</span><em>Log Out</em></a></li>
+            </ul>
+        </header>
+
+        <!-- Main -->
+        <section>
+            <!-- Bootstrap Modal Page -->
+            <div id="requestModal" class="page-popup" width="80%">
+                <span class="avatar"><img src="images/logo/Zovie%20World%20Logo.png" align="right" width="96" alt="Zovie World logo" /></span>
+                <div id="title" class="pagetitle">Vendors</div>
+                <div>
+                    <form name="newRequest" action="newRequest.php" method="post" class="pages">
+                        <fieldset class="textbox">
+                            <legend>
+                                <strong>Requestor</strong>
+                            </legend>
+                            <legend>
+                                <strong>Rep: </strong>
+                            </legend>
+                            <input type="text" name="rep" required=required />
+                            <legend>
+                                <strong>Customer: </strong>
+                            </legend><input type="text" name="customer" required=required />
+                        </fieldset>
+                        <fieldset class="textbox">
+                            <legend><strong>Door Type</strong></legend>
+                            <input type="radio" name="doorType" id="door1" value="Retro Fairy Door" />
+                            <label for="door1">Retro Fairy Door</label>
+                            <input type="radio" name="doorType" id="door2" value="Woodland Fairy Door" />
+                            <label for="door2">Woodland Fairy Door</label>
+                            <input type="radio" name="doorType" id="door3" value="Arched Fairy Door" />
+                            <label for="door3">Arched Fairy Door</label>
+                        </fieldset>
+                        <fieldset class="textbox">
+                            Color<br />
+                            <select name="colorSelect" class="dropdown">
+                                <option value="blue">Blue</option>
+                                <option value="brown">Brown</option>
+                                <option value="green">Green</option>
+                                <option value="pink" selected=selected>Pink</option>
+                                <option value="purple">Purple</option>
+                            </select>
+                            Quantity<br />
+                            <input type="number" name="quantity" class="dropdown" min="1" max="10" value="1" />
+
+                            <button name="submitItem" id="btnsubmit" type="button" class="button2"><strong>Add To Order</strong></button><br /><br />
+
+                            <button name="submitRequest" id="btnClose" type="button" class="button2" data-dismiss="modal"><strong>Submit Request</strong></button>
+                            <br />
+
+                            <button name="cancel" id="btncancel" type="button" class="button3 pull-right" data-dismiss="modal">Cancel</button>
+                            <br />
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section>
+            <footer>
+                <br />
+                <br />
+                <p align="center">
+                    Copyright &copy;
+                    <script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script> Zovie World
+                </p>
+            </footer>
+        </section>
+
+        <script>
+            // Add a mask to body on div popup
+            $('#wrapper').append('<div id="mask"></div>');
+            $('#mask').fadeIn(300);
+        </script>
+
+        <script>
+            function closeMask() { $('#mask').hide(); }
+
+            // Cancel the login popup (mask) on submit or cancel
+            $("#btnClose,#btncancel").click(closeMask);
+        </script>
+    </div>
+</body>
+
+</html>

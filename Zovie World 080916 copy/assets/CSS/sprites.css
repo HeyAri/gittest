@@ -1,0 +1,94 @@
+.Edit_Pencil, .Home_Blue, .Other_Report, .Approve_Blue, .Approve_Green, .Cart_Blue, .Settings_Green, .Print, .Report_Alt, .Info_Green, .Previous_Green, .Add_Green, .Delete_Green, .Next_Green, .Search_Green{
+	background: url(/Sprites/sprites.png) no-repeat;
+}
+
+.Edit_Pencil{
+	background-position: -512px 0;
+	width: 128px;
+	height: 128px;
+}
+
+.Home_Blue{
+	background-position: 0 -150px ;
+	width: 128px;
+	height: 128px;
+}
+
+.Other_Report{
+	background-position: -385px 0;
+	width: 128px;
+	height: 128px;
+}
+
+.Approve_Blue{
+	background-position: -256px 0;
+	width: 128px;
+	height: 128px;
+}
+
+.Approve_Green{
+	background-position: -128px 0;
+	width: 128px;
+	height: 128px;
+}
+
+.Cart_Blue{
+	background-position: 0 0;
+	width: 128px;
+	height: 128px;
+}
+
+.Settings_Green{
+	background-position: -128px -150px ;
+	width: 128px;
+	height: 128px;
+}
+
+.Print{
+	background-position: -512px -151px ;
+	width: 128px;
+	height: 128px;
+}
+
+.Report_Alt{
+	background-position: -254px -150px ;
+	width: 128px;
+	height: 128px;
+}
+
+.Info_Green{
+	background-position: -383px -150px ;
+	width: 128px;
+	height: 128px;
+}
+
+.Previous_Green{
+	background-position: -257px -299px ;
+	width: 128px;
+	height: 128px;
+}
+
+.Add_Green{
+	background-position: 0 -299px ;
+	width: 128px;
+	height: 128px;
+}
+
+.Delete_Green{
+	background-position: -129px -299px ;
+	width: 128px;
+	height: 128px;
+}
+
+.Next_Green{
+	background-position: -385px -299px ;
+	width: 128px;
+	height: 128px;
+}
+
+.Search_Green{
+	background-position: -512px -301px ;
+	width: 128px;
+	height: 128px;
+}
+

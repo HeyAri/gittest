@@ -1,0 +1,162 @@
+﻿@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
+
+
+/* Mask for background */
+#mask {
+    display: none;
+    background: #f3f3f3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 9999;
+}
+/*Popup formatting*/
+.page-popup {
+    display: none;
+	background: #999;
+    padding: 10px;
+    border: 2px solid #ddd;
+    float: none;
+    font-size: .9em;
+    position: fixed;
+    width:80%;
+    height:80%;
+    top: 10%;
+    left: 10%;
+
+    overflow:scroll;
+    box-shadow: 0px 0px 20px #999;
+    /* CSS3 */
+        -moz-box-shadow: 0px 0px 20px #999;
+    /* Firefox */
+        -webkit-box-shadow: 0px 0px 20px #999;
+    /* Safari, Chrome */
+	border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    /* Firefox */
+        -webkit-border-radius: 3px;
+    z-index: 99999;
+}
+.pagetitle {
+    text-align:center;
+    color: #ddd;
+    padding: 5px;
+}
+
+fieldset {
+    border: 2px;
+    border-color: white;
+    margin: 1em, 1em, 1em, 0;
+    padding: 1em;
+}
+
+form.pages .textbox label {
+    display: block;
+    padding-bottom: 7px;
+    margin: 1em, 1em, 1em, 0;
+}
+
+form.pages .textbox span {
+    display: block;
+    margin: 1em, 1em, 1em, 0;
+}
+
+form.pages p, form.pages span {
+    color: #333;
+    font-size: 11px;
+    line-height: 14px;
+    margin: 1em, 1em, 1em, 0;
+}
+
+form.pages .textbox input {
+    background: #f3f3f3;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #000;
+    border-right: 1px solid #333;
+    border-top: 1px solid #000;
+    color: #333;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font: 13px Arial, Helvetica, sans-serif;
+    padding: 6px 6px 4px;
+    width: auto;
+    margin: 1em, 1em, 1em, 0;
+}
+
+form.pages input:-moz-placeholder {
+    color: #333;
+    text-shadow: 0 0 2px #000;
+    margin: 1em, 1em, 1em, 0;
+}
+
+form.pages input::-webkit-input-placeholder {
+    color: #333;
+    text-shadow: 0 0 2px #000;
+    margin: 1em, 1em, 1em, 0;
+}
+
+/*format buttons*/
+button2 {
+    background: -moz-linear-gradient(center top, #00ff90, #dddddd);
+    background: -webkit-gradient(linear, left top, left bottom, from(#00ff90), to(#dddddd));
+    background: -o-linear-gradient(top, #00ff90, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#00ff90', EndColorStr='#dddddd');
+    border-color: #000;
+    border-width: 1px;
+    border-radius: 14px 14px 4px 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #00ff90;
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 20px 20px;
+    margin-top: 10px;
+    font: 13px;
+    width: 200px;
+    text-align:center;
+
+}
+button3 {
+    background: -moz-linear-gradient(center top, #ffd800, #999);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffd800), to(#dddddd));
+    background: -o-linear-gradient(top, #ffd800, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffd800', EndColorStr='#dddddd');
+    border-color: #000;
+    border-width: 1px;
+    border-radius: 14px 14px 4px 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #ffd800;
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 20px 20px;
+    margin-top: 10px;
+    font: 11px;
+    width: 150px;
+    text-align:center;
+
+}
+.button:hover {
+    background: #ddd;
+}
+
+/* Form Validation Formatting */
+	input {
+		width: 15em;
+		margin-left: 1em;
+		margin-bottom: .5em;}
+	input:required, input[required] {
+		border: 2px solid red;
+	}
+	input:valid {
+		border: 1px solid black;
+	}
+	input:invalid {
+		box-shadow: none;
+	}
